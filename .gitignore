@@ -1,0 +1,23 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# The upstream CLIK-Diffusion tree, including the released checkpoints under
+# Code/checkpoint/.  Not vendored here -- ./setup.sh clones it.
+src/CLIK-Diffusion/
+
+# The IOS dataset (~8 GB).  Copied in by hand; see setup.sh and README.md.
+data/
+
+# Everything the scripts generate: inference sweeps, metric CSVs, the finetuning cache
+# and the Lightning/wandb run directories.
+outputs/
+
+
